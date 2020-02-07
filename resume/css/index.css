@@ -162,6 +162,8 @@ button {
 }
 
 .top-nav {
+    height: 44px;
+    line-height: 44px;
     background-color: #282828;
     text-align: center;
     position: fixed;
@@ -184,6 +186,7 @@ button {
     color: #fff;
     text-decoration: none;
     outline: 0;
+    font-size: 1rem;
     font-weight: 600;
     border-radius: 8px;
     color: #fff;
