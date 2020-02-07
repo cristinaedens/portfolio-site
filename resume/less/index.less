@@ -1,0 +1,522 @@
+// Is this working?
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0 auto;
+}
+//this is the beginning of my code
+.site-container {
+ margin-left: 40%;
+}
+
+button {
+  background-color: #393e46;
+  width: 7%;
+  padding: 0.3%;
+  border: none;
+  button-radius: 100%;
+}
+
+button:hover {
+  background-color: #40464e;
+  color: white;
+}
+
+.top-nav {
+  background-color: #393e46;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5%;
+
+  a {
+    text-decoration: none;
+    color: #fe346e;
+  } //this closes nav anchors
+} //this closes nav
+
+nav a:hover {
+  color: #f4f4f4;
+}
+
+.first-content {
+  display: flex;
+  flex-direction: row;
+	width: 100%;
+
+	@media screen and (max-width: 500px) {
+		flex-direction: column;
+	}
+}
+
+.left-side {
+  background: #464159;
+  width: 30%;
+  padding-bottom: 10%;
+	
+	
+
+  h3 {
+    font-size: 1.5rem;
+    color: #fe346e;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: antiquewhite;
+  }
+
+  .photo-me {
+    border-radius: 50%;
+    width: 15%;
+    position: absolute;
+		left: 16%;
+		
+		@media screen and (max-width: 500px) {
+			width: 25%;
+			top: 250px;
+			left: 25px;
+		}
+	
+	}
+
+	
+	
+} //This closes left side container
+
+.about {
+	margin-top: 50%;
+	
+	@media screen and (max-width: 500px) {
+		padding-top: 150px;
+	}
+
+  h3 {
+		margin: 4%;
+		font-size: 2rem;
+  }
+
+  p {
+    margin: 4%;
+		text-align: left;
+		font-size: 1.5rem;
+  }
+} //This closes about tag
+
+.first-divider {
+  border: 1px solid #8bbabb;
+}
+
+.good-stuff {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+	margin-top: 10%;
+	margin-left: 20%;
+
+  h3 {
+		margin: 4%;
+		font-size: 2rem;
+  }
+} //This closes good stuff tag
+
+li {
+  border: 1px solid #8bbabb;
+  padding: 2%;
+  font-size: 1.5rem;
+  color: antiquewhite;
+}
+
+.left-break {
+  border: 1px solid #8bbabb;
+  margin-top: 30%;
+  margin-right: 60%;
+	width: 40%;
+
+	@media screen and (max-width: 500px) {
+		display: none;
+	}
+}
+
+.middle {
+  background: #dedef0;
+	width: 30%;
+}
+
+.right-side {
+  background: #dedef0;
+	width: 70%;
+} //This closes first content tag
+
+.right-side .heading {
+	@media screen and (max-width: 500px) {
+		position: absolute;
+		top: 100px;
+	}
+}
+
+.left-side,
+.right-side,
+.middle {
+	padding-top: 2%;
+
+	@media screen and (max-width: 500px) {
+		width: 100%;		
+	}
+}
+
+.heading {
+  font-family: "Special Elite", cursive;
+  margin: 0.5% auto;
+  text-shadow: -9px -3px 7px rgba(0, 0, 0, 0.774);
+  h1 {
+    font-size: 3rem;
+    color: #464159;
+    margin-top: 5%;
+		margin-left: 25%;
+		
+		@media screen and (max-width: 500px) {
+			color: white;		
+		}
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    color: #464159;
+    margin-top: 1%;
+		margin-left: 30%;
+		
+		@media screen and (max-width: 500px) {
+			color: white;		
+		}
+  }
+
+  hr {
+    border: 1px solid #8bbabb;
+    margin-top: 1.5%;
+  }
+} //This closes heading container
+
+.work {
+  h3 {
+    margin-top: 80%;
+    margin-left: 30%;
+    margin-bottom: 10%;
+    font-size: 1.7rem;
+    color: #464159;
+		text-shadow: -5px -3px 5px rgba(0, 0, 0, 0.774);
+		
+		@media screen and (max-width: 500px) {
+			margin-top: 15px;		
+		}
+  }
+  .year-one {
+    color: rgb(136, 7, 7);
+    margin-left: 30%;
+    font-size: 1.2rem;
+  }
+
+  .title-one {
+    margin-left: 35%;
+    font-size: 1rem;
+    color: #464159;
+  }
+
+  .company-one {
+    margin-left: 35%;
+    font-size: 1.5rem;
+    color: #464159;
+  }
+
+  .present {
+    color: rgb(136, 7, 7);
+    margin-left: 35%;
+    font-size: 1.2rem;
+  }
+
+  .title-two {
+    margin-left: 35%;
+    font-size: 1rem;
+    color: #464159;
+  }
+
+  .company-two {
+    margin-left: 35%;
+    font-size: 1.5rem;
+    color: #464159;
+  }
+  .experience-two {
+    border: 1px solid #464159;
+    margin-left: 10%;
+    margin-right: 30%;
+	}
+	
+	
+
+  .experience-one {
+    border: 1px solid #464159;
+    margin-left: 10%;
+    margin-right: 30%;
+  }
+} //This closes middle tag
+
+.express-homes, .lambdaschool1, .lambda, .kingdom, .right-side hr {
+	@media screen and (max-width: 500px) {
+		display: none;
+	}
+}
+
+
+.school {
+  h3 {
+    margin-top: 20%;
+    margin-left: 30%;
+    margin-bottom: 10%;
+    font-size: 1.7rem;
+    color: #464159;
+    text-shadow: -5px -3px 5px rgba(0, 0, 0, 0.774);
+  }
+
+  .class-year1 {
+    color: rgb(136, 7, 7);
+    margin-left: 30%;
+    font-size: 1.2rem;
+  }
+
+  .school-name1 {
+    margin-left: 35%;
+    font-size: 1.5rem;
+    color: #464159;
+  }
+
+  .school-break1 {
+    border: 1px solid #464159;
+    margin-left: 10%;
+    margin-right: 30%;
+  }
+
+  .class-year2 {
+    color: rgb(136, 7, 7);
+    margin-left: 30%;
+    font-size: 1.2rem;
+  }
+
+  .school-name2 {
+    margin-left: 15%;
+    font-size: 1.5rem;
+    color: #464159;
+  }
+
+  .school-break2 {
+    border: 1px solid #464159;
+    margin-left: 10%;
+    margin-right: 30%;
+  }
+} //This closes school tag
+
+.contact-me{
+	margin-left:12%;
+}
+
+.phone-num{
+	color:#bc4873;
+	font-size: 1.2rem;
+
+}
+
+.email-link{
+	font-size: 1.2rem;
+	color:#8b2f97;
+}
+
+.git-logo{
+	width: 20%;
+
+
+}
+
+.git-link{
+  margin-top: 5%;
+  width: 2%;
+}
+
+.linkedin-logo{
+	width:10%;
+}
+
+.information1{
+	margin-left: 40%;
+	margin-top:5%;
+	margin-bottom: 4%;
+}
+
+.school-divider{
+	border: 1px solid #464159;
+}
+
+.work1{
+	border: 1px solid #464159;
+	margin-top: 4%;
+}
+
+.experience{
+	font-size: 1rem;
+}
+
+.education5{
+	border: 1px solid #464159;
+	margin-top: 5%;
+}
+
+.lambdaschool1{
+	margin-top: 16%;
+}
+
+.school-divider2{
+	border: 1px solid #464159;
+	margin-top: 1%;
+}
+
+.kingdom{
+	margin-top: 3%;
+	font-size: 1.1rem;
+}
+
+.final-break{
+	border: 1px solid #464159;
+	margin-top: 2%;
+}
